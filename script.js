@@ -1,2 +1,1 @@
-document.getElementById("js-test").innerText =
-  "JS Status: ON ✅ | Learning in Progress 🚀";
+document.getElementById("js-test").innerText = "JS Status: ON ✅ | Learning in Progress 🚀";
