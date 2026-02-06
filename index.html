@@ -289,7 +289,139 @@ New → Ready → Running → Waiting → Terminated
 
 <p><b>Next Topics:</b> Linux commands, Windows internals, system calls, virtualization, containers.</p>
 
-  <hr>
+<hr>
+
+<h2 id="js-ts">JavaScript & TypeScript Notes (Smart Comparison)</h2>
+
+<p>
+  <b>JavaScript (JS)</b> and <b>TypeScript (TS)</b> are closely related.
+  TypeScript is a <b>superset of JavaScript</b>, meaning:
+  <br>
+  <i>All JavaScript code is valid TypeScript code.</i>
+</p>
+
+<ul>
+  <li>
+    <b>Main Difference</b>
+    <ul>
+      <li>JavaScript → Dynamic typing</li>
+      <li>TypeScript → Static typing + JavaScript features</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>Basic Variable Declaration</b>
+
+    <pre>
+JavaScript:
+let age = 25;
+
+TypeScript:
+let age: number = 25;
+    </pre>
+  </li>
+
+  <li>
+    <b>Data Types</b>
+
+    <pre>
+JavaScript:
+let name = "Alex";
+let isActive = true;
+
+TypeScript:
+let name: string = "Alex";
+let isActive: boolean = true;
+    </pre>
+  </li>
+
+  <li>
+    <b>Functions</b>
+
+    <pre>
+JavaScript:
+function add(a, b) {
+    return a + b;
+}
+
+TypeScript:
+function add(a: number, b: number): number {
+    return a + b;
+}
+    </pre>
+  </li>
+
+  <li>
+    <b>Arrays</b>
+
+    <pre>
+JavaScript:
+let numbers = [1, 2, 3];
+
+TypeScript:
+let numbers: number[] = [1, 2, 3];
+    </pre>
+  </li>
+
+  <li>
+    <b>Objects</b>
+
+    <pre>
+JavaScript:
+let user = {
+    name: "Sam",
+    age: 22
+};
+
+TypeScript:
+let user: {
+    name: string;
+    age: number;
+} = {
+    name: "Sam",
+    age: 22
+};
+    </pre>
+  </li>
+
+  <li>
+    <b>Why TypeScript Exists</b>
+    <ul>
+      <li>Catches errors at compile time</li>
+      <li>Better code readability</li>
+      <li>Great for large applications</li>
+      <li>Excellent IDE support</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>Compilation Flow</b>
+
+    <pre>
+TypeScript (.ts)
+      ↓
+Compiled to JavaScript (.js)
+      ↓
+Runs in Browser / Node.js
+    </pre>
+  </li>
+
+  <li>
+    <b>Where They Are Used</b>
+    <ul>
+      <li>JavaScript → Browsers, Node.js, web apps</li>
+      <li>TypeScript → Angular, React, enterprise apps</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+  <b>Learning Strategy:</b>
+  Learn JavaScript fundamentals first, then
+  move to TypeScript for safer and scalable code.
+</p>
+
+<hr>
 
 <h2 id="networking">Networking Notes</h2>
 
