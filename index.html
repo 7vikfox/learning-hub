@@ -15,6 +15,85 @@
 #This is a link to cybersecurity page 
 <a href="cybersecurity.html">🔐 Cybersecurity Notes</a>
   
+<h2 id="sql">SQL Notes</h2>
+
+<ul>
+  <li><strong>1. View all data</strong><br>
+    Used to display every record from a table.
+    <pre>
+SELECT * FROM students;
+    </pre>
+  </li>
+
+  <li><strong>2. Insert data</strong><br>
+    Adds a new row into a table.
+    <pre>
+INSERT INTO students (id, name, age, grade)
+VALUES (1, 'Alex', 20, 'A');
+    </pre>
+  </li>
+
+  <li><strong>3. Update data</strong><br>
+    Modifies existing records in a table.
+    <pre>
+UPDATE students
+SET grade = 'B'
+WHERE name = 'Alex';
+    </pre>
+  </li>
+
+  <li><strong>4. Delete data</strong><br>
+    Removes records from a table.
+    <pre>
+DELETE FROM students
+WHERE name = 'Alex';
+    </pre>
+  </li>
+
+  <li><strong>5. Filter records (WHERE)</strong><br>
+    Retrieves data based on conditions.
+    <pre>
+SELECT * FROM students
+WHERE age &gt; 18;
+    </pre>
+  </li>
+
+  <li><strong>6. Sort records (ORDER BY)</strong><br>
+    Sorts results in ascending or descending order.
+    <pre>
+SELECT * FROM students
+ORDER BY age ASC;
+    </pre>
+  </li>
+
+  <li><strong>7. Count records</strong><br>
+    Returns the total number of rows.
+    <pre>
+SELECT COUNT(*) AS total_students
+FROM students;
+    </pre>
+  </li>
+
+  <li><strong>8. Average values</strong><br>
+    Calculates the average of a numeric column.
+    <pre>
+SELECT AVG(age) AS average_age
+FROM students;
+    </pre>
+  </li>
+
+  <li><strong>9. Group data</strong><br>
+    Groups records and applies aggregate functions.
+    <pre>
+SELECT grade, COUNT(*) AS total_students
+FROM students
+GROUP BY grade;
+    </pre>
+  </li>
+</ul>
+
+<hr>
+
 <h2 id="python">Python Notes</h2>
 <ul>
   <li>Python is a high-level programming language.</li>
