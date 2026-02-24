@@ -924,7 +924,120 @@ Application is deployed
         CI/CD pipelines are essential for modern software development. 
         They ensure faster delivery, higher quality, and reliable deployments.
     </p>
-  
+
+    <h1>Docker Notes</h1>
+
+    <h2>1. Introduction to Docker</h2>
+    <p>
+        <a href="https://www.docker.com/" target="_blank">Docker</a> is an open-source platform used to develop, ship, and run applications inside lightweight containers.
+        Containers package an application with all its dependencies so it can run consistently across different environments.
+    </p>
+
+    <h2>2. Why Docker?</h2>
+    <ul>
+        <li>Environment consistency (Works on my machine problem solved)</li>
+        <li>Lightweight compared to virtual machines</li>
+        <li>Fast deployment</li>
+        <li>Easy scalability</li>
+        <li>Efficient resource usage</li>
+    </ul>
+
+    <h2>3. Docker Architecture</h2>
+    <ul>
+        <li><strong>Docker Client</strong> – Command line interface (CLI).</li>
+        <li><strong>Docker Daemon</strong> – Runs containers and manages images.</li>
+        <li><strong>Docker Images</strong> – Read-only templates to create containers.</li>
+        <li><strong>Docker Containers</strong> – Running instances of images.</li>
+        <li><strong>Docker Registry</strong> – Stores Docker images (e.g., Docker Hub).</li>
+    </ul>
+
+    <h2>4. Key Docker Concepts</h2>
+
+    <h3>Docker Image</h3>
+    <p>
+        A lightweight, standalone, executable package that includes application code, libraries, dependencies, and configuration files.
+    </p>
+
+    <h3>Docker Container</h3>
+    <p>
+        A running instance of a Docker image. Containers are isolated but share the host OS kernel.
+    </p>
+
+    <h3>Dockerfile</h3>
+    <p>
+        A text file containing instructions to build a Docker image.
+    </p>
+
+    <h3>Docker Hub</h3>
+    <p>
+        A cloud-based registry service where Docker images are stored and shared.
+    </p>
+
+    <h2>5. Common Docker Commands</h2>
+    <ul>
+        <li><code>docker --version</code> – Check Docker version</li>
+        <li><code>docker pull image_name</code> – Download image</li>
+        <li><code>docker build -t image_name .</code> – Build image</li>
+        <li><code>docker run image_name</code> – Run container</li>
+        <li><code>docker ps</code> – List running containers</li>
+        <li><code>docker stop container_id</code> – Stop container</li>
+        <li><code>docker rm container_id</code> – Remove container</li>
+        <li><code>docker rmi image_name</code> – Remove image</li>
+    </ul>
+
+    <h2>6. Docker vs Virtual Machines</h2>
+    <table border="1">
+        <tr>
+            <th>Docker</th>
+            <th>Virtual Machine</th>
+        </tr>
+        <tr>
+            <td>Lightweight</td>
+            <td>Heavyweight</td>
+        </tr>
+        <tr>
+            <td>Shares host OS kernel</td>
+            <td>Has its own guest OS</td>
+        </tr>
+        <tr>
+            <td>Fast startup</td>
+            <td>Slow startup</td>
+        </tr>
+        <tr>
+            <td>Less resource usage</td>
+            <td>More resource usage</td>
+        </tr>
+    </table>
+
+    <h2>7. Docker Compose</h2>
+    <p>
+        Docker Compose is a tool used to define and run multi-container Docker applications using a YAML file.
+    </p>
+
+    <h2>8. Benefits of Docker</h2>
+    <ul>
+        <li>Portability</li>
+        <li>Scalability</li>
+        <li>Isolation</li>
+        <li>Continuous Deployment support</li>
+        <li>Improved DevOps workflow</li>
+    </ul>
+
+    <h2>9. Best Practices</h2>
+    <ul>
+        <li>Use official base images</li>
+        <li>Keep images small</li>
+        <li>Use multi-stage builds</li>
+        <li>Do not run containers as root</li>
+        <li>Use .dockerignore file</li>
+    </ul>
+
+    <h2>10. Conclusion</h2>
+    <p>
+        Docker simplifies application deployment by using containerization technology.
+        It is widely used in DevOps and CI/CD pipelines for modern application development.
+    </p>
+
   <li>
     <b>DevOps & Security (DevSecOps)</b>
     <ul>
