@@ -855,6 +855,76 @@ Application is deployed
     </pre>
   </li>
 
+   <h1>CI/CD Pipeline Notes</h1>
+
+    <h2>1. Introduction to CI/CD</h2>
+    <p>
+        CI/CD stands for <strong>Continuous Integration</strong> and <strong>Continuous Delivery/Deployment</strong>.
+        It is a modern DevOps practice that automates software building, testing, and deployment.
+    </p>
+
+    <h2>2. Continuous Integration (CI)</h2>
+    <ul>
+        <li>Developers frequently merge code into a shared repository.</li>
+        <li>Each merge triggers automated builds and tests.</li>
+        <li>Helps detect bugs early.</li>
+        <li>Improves collaboration among team members.</li>
+    </ul>
+
+    <h3>Key CI Tools</h3>
+    <ul>
+        <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+        <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a></li>
+        <li><a href="https://about.gitlab.com/" target="_blank">GitLab CI</a></li>
+        <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
+    </ul>
+
+    <h2>3. Continuous Delivery (CD)</h2>
+    <ul>
+        <li>Code changes are automatically prepared for release.</li>
+        <li>Deployment to staging or production can be done manually.</li>
+        <li>Ensures software is always in a deployable state.</li>
+    </ul>
+
+    <h2>4. Continuous Deployment</h2>
+    <ul>
+        <li>Extends Continuous Delivery.</li>
+        <li>Automatically deploys every successful build to production.</li>
+        <li>No manual intervention required.</li>
+    </ul>
+
+    <h2>5. CI/CD Pipeline Stages</h2>
+    <ol>
+        <li><strong>Source Stage</strong> – Code commit to repository.</li>
+        <li><strong>Build Stage</strong> – Compile and package application.</li>
+        <li><strong>Test Stage</strong> – Run automated tests.</li>
+        <li><strong>Deploy Stage</strong> – Deploy to staging/production.</li>
+        <li><strong>Monitor Stage</strong> – Monitor application performance.</li>
+    </ol>
+
+    <h2>6. Benefits of CI/CD</h2>
+    <ul>
+        <li>Faster release cycles.</li>
+        <li>Reduced manual errors.</li>
+        <li>Improved software quality.</li>
+        <li>Better team productivity.</li>
+    </ul>
+
+    <h2>7. Best Practices</h2>
+    <ul>
+        <li>Maintain a single source repository.</li>
+        <li>Automate testing at every stage.</li>
+        <li>Keep builds fast.</li>
+        <li>Monitor continuously after deployment.</li>
+        <li>Implement rollback strategies.</li>
+    </ul>
+
+    <h2>8. Conclusion</h2>
+    <p>
+        CI/CD pipelines are essential for modern software development. 
+        They ensure faster delivery, higher quality, and reliable deployments.
+    </p>
+  
   <li>
     <b>DevOps & Security (DevSecOps)</b>
     <ul>
