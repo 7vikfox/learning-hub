@@ -328,6 +328,62 @@ risk management, and real-world security thinking — without exploit code.
 
 <hr>
 
+<section id="bash-files">
+  <h2>🖥️ Bash File Basics</h2>
+
+  <p>If you are wondering how Bash files are named (like <code>.py</code> for Python), Bash scripts typically use:</p>
+
+  <pre><code>.sh</code></pre>
+
+  <h3>✅ Examples</h3>
+  <pre><code>
+script.sh
+setup.sh
+deploy.sh
+  </code></pre>
+
+  <h3>📌 Important Notes</h3>
+
+  <h4>1. Extension is Optional</h4>
+  <p>Bash does not require <code>.sh</code>, but it's best practice.</p>
+  <pre><code>
+setup       <!-- works -->
+setup.sh    <!-- recommended -->
+  </code></pre>
+
+  <h4>2. Add Shebang (Very Important)</h4>
+  <p>Add this at the top of your file:</p>
+  <pre><code>#!/bin/bash</code></pre>
+
+  <p>Or (more portable):</p>
+  <pre><code>#!/usr/bin/env bash</code></pre>
+
+  <h4>3. Make File Executable</h4>
+  <pre><code>chmod +x setup.sh</code></pre>
+
+  <h4>4. Run the Script</h4>
+  <pre><code>./setup.sh</code></pre>
+
+  <h3>🚫 Common Mistakes</h3>
+  <ul>
+    <li>❌ Using <code>.bash</code> instead of <code>.sh</code></li>
+    <li>❌ Forgetting shebang</li>
+    <li>❌ Not making file executable</li>
+    <li>❌ Running without <code>./</code></li>
+  </ul>
+
+  <h3>💡 Real Example</h3>
+  <pre><code>./setup.sh</code></pre>
+  <p>This means:</p>
+  <ul>
+    <li>✔ File name is <code>setup.sh</code></li>
+    <li>✔ It is executable</li>
+    <li>✔ Correct Bash usage</li>
+  </ul>
+</section>
+  
+<hr>
+
 <h2>14. Cybersecurity Mindset (Advanced)</h2>
 
 <ul>
