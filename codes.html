@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Notes</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 25%;
+      background: #1e293b;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+      border-right: 2px solid #334155;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .sidebar section {
+      margin-bottom: 25px;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      width: 75%;
+      padding: 30px;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #22c55e;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .card h2 {
+      color: #facc15;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      margin-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    code {
+      background: #334155;
+      padding: 3px 6px;
+      border-radius: 5px;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h2>Quick Notes</h2>
+
+    <!-- Python -->
+    <section>
+      <h3>Python</h3>
+      <ul>
+        <li>Easy & beginner-friendly</li>
+        <li>Used in AI, ML, Data Science</li>
+        <li>No need to declare data types</li>
+        <li>Example: <code>print("Hello")</code></li>
+      </ul>
+    </section>
+
+    <!-- Go -->
+    <section>
+      <h3>Go (Golang)</h3>
+      <ul>
+        <li>Developed by Google</li>
+        <li>Fast & efficient</li>
+        <li>Great for backend systems</li>
+        <li>Example: <code>fmt.Println("Hello")</code></li>
+      </ul>
+    </section>
+
+    <!-- Ruby -->
+    <section>
+      <h3>Ruby</h3>
+      <ul>
+        <li>Simple & readable syntax</li>
+        <li>Used in web development</li>
+        <li>Popular framework: Rails</li>
+        <li>Example: <code>puts "Hello"</code></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <h1>Programming Language Notes</h1>
+
+    <!-- JAVA -->
+    <div class="card">
+      <h2>Java</h2>
+      <ul>
+        <li><b>Definition:</b> Java is an object-oriented programming language used for building platform-independent applications.</li>
+        <li><b>Features:</b>
+          <ul>
+            <li>Platform independent (Write Once, Run Anywhere)</li>
+            <li>Strongly typed language</li>
+            <li>Secure and robust</li>
+          </ul>
+        </li>
+        <li><b>Uses:</b>
+          <ul>
+            <li>Android apps</li>
+            <li>Web applications</li>
+            <li>Enterprise software</li>
+          </ul>
+        </li>
+        <li><b>Example:</b> <code>System.out.println("Hello World");</code></li>
+      </ul>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <div class="card">
+      <h2>JavaScript</h2>
+      <ul>
+        <li><b>Definition:</b> JavaScript is a scripting language used to create dynamic and interactive web pages.</li>
+        <li><b>Features:</b>
+          <ul>
+            <li>Runs in browser</li>
+            <li>Event-driven</li>
+            <li>Supports asynchronous programming</li>
+          </ul>
+        </li>
+        <li><b>Uses:</b>
+          <ul>
+            <li>Web development</li>
+            <li>Frontend frameworks (React, Angular)</li>
+            <li>Backend using Node.js</li>
+          </ul>
+        </li>
+        <li><b>Example:</b> <code>console.log("Hello World");</code></li>
+      </ul>
+    </div>
+
+    <!-- PYTHON -->
+    <div class="card">
+      <h2>Python</h2>
+      <ul>
+        <li><b>Definition:</b> Python is a high-level programming language known for its simplicity and readability.</li>
+        <li><b>Features:</b>
+          <ul>
+            <li>Easy syntax</li>
+            <li>Interpreted language</li>
+            <li>Dynamically typed</li>
+          </ul>
+        </li>
+        <li><b>Uses:</b>
+          <ul>
+            <li>Data science</li>
+            <li>Machine learning</li>
+            <li>Automation</li>
+          </ul>
+        </li>
+        <li><b>Example:</b> <code>print("Hello World")</code></li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
