@@ -107,15 +107,171 @@
     </section>
 
     <!-- Go -->
-    <section>
-      <h3>Go (Golang)</h3>
+<section>
+  <h3>Go (Golang)</h3>
+
+  <ul>
+
+    <!-- ================= BEGINNER ================= -->
+    <li><b>Beginner Level:</b>
       <ul>
-        <li>Developed by Google</li>
-        <li>Fast & efficient</li>
-        <li>Great for backend systems</li>
-        <li>Example: <code>fmt.Println("Hello")</code></li>
+        <li><b>Definition:</b> Go (Golang) is an open-source programming language developed by Google. It is designed for simplicity, performance, and efficient concurrency.</li>
+        
+        <li><b>Key Features:</b>
+          <ul>
+            <li>Compiled language (fast execution)</li>
+            <li>Simple and clean syntax</li>
+            <li>Built-in concurrency support</li>
+          </ul>
+        </li>
+
+        <li><b>Basic Structure:</b>
+          <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World")
+}
+          </code></pre>
+        </li>
+
+        <li><b>Variables:</b>
+          <pre><code>
+var name string = "Go"
+age := 20   // short declaration
+
+fmt.Println(name, age)
+          </code></pre>
+        </li>
+
+        <li><b>Data Types:</b> int, float64, string, bool</li>
       </ul>
-    </section>
+    </li>
+
+
+    <!-- ================= INTERMEDIATE ================= -->
+    <li><b>Intermediate Level:</b>
+      <ul>
+
+        <li><b>Functions:</b>
+          <pre><code>
+func add(a int, b int) int {
+    return a + b
+}
+
+result := add(5, 3)
+fmt.Println(result)
+          </code></pre>
+        </li>
+
+        <li><b>Arrays & Slices:</b>
+          <pre><code>
+// Array
+var arr [3]int = [3]int{1, 2, 3}
+
+// Slice (dynamic)
+slice := []int{1, 2, 3, 4}
+slice = append(slice, 5)
+
+fmt.Println(slice)
+          </code></pre>
+        </li>
+
+        <li><b>Loops:</b>
+          <pre><code>
+for i := 0; i < 5; i++ {
+    fmt.Println(i)
+}
+          </code></pre>
+        </li>
+
+        <li><b>Conditionals:</b>
+          <pre><code>
+x := 10
+
+if x > 5 {
+    fmt.Println("Greater")
+} else {
+    fmt.Println("Smaller")
+}
+          </code></pre>
+        </li>
+
+      </ul>
+    </li>
+
+
+    <!-- ================= ADVANCED ================= -->
+    <li><b>Advanced Level:</b>
+      <ul>
+
+        <li><b>Structs (like classes):</b>
+          <pre><code>
+type Person struct {
+    name string
+    age  int
+}
+
+p := Person{name: "John", age: 25}
+fmt.Println(p.name)
+          </code></pre>
+        </li>
+
+        <li><b>Concurrency (Goroutines):</b>
+          <pre><code>
+func printMsg() {
+    fmt.Println("Hello from Goroutine")
+}
+
+go printMsg()
+
+fmt.Println("Main Function")
+          </code></pre>
+        </li>
+
+        <li><b>Channels:</b>
+          <pre><code>
+ch := make(chan string)
+
+go func() {
+    ch <- "Hello"
+}()
+
+msg := <-ch
+fmt.Println(msg)
+          </code></pre>
+        </li>
+
+        <li><b>Error Handling:</b>
+          <pre><code>
+func divide(a, b int) (int, error) {
+    if b == 0 {
+        return 0, fmt.Errorf("cannot divide by zero")
+    }
+    return a / b, nil
+}
+          </code></pre>
+        </li>
+
+      </ul>
+    </li>
+
+
+    <!-- ================= USES ================= -->
+    <li><b>Real-World Uses:</b>
+      <ul>
+        <li>Backend development (APIs, servers)</li>
+        <li>Cloud systems (Docker, Kubernetes)</li>
+        <li>Microservices architecture</li>
+        <li>DevOps tools</li>
+      </ul>
+    </li>
+
+  </ul>
+</section>
+
 
     <!-- Ruby -->
     <section>
