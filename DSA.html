@@ -56,6 +56,160 @@
 
   <hr>
 
+  <h2>📊 Basic Data Structures Detailed </h2>
+
+<!-- ================= ARRAYS ================= -->
+<h3>📍 Arrays</h3>
+<p><b>Definition:</b> Arrays are collections of elements stored in contiguous (continuous) memory locations.</p>
+
+<ul>
+  <li><b>Key Features:</b>
+    <ul>
+      <li>Fixed size</li>
+      <li>Fast access using index (O(1))</li>
+      <li>Stores same data type elements</li>
+    </ul>
+  </li>
+
+  <li><b>Example (Java):</b>
+    <pre><code>
+int[] arr = {10, 20, 30};
+System.out.println(arr[0]); // Output: 10
+    </code></pre>
+  </li>
+
+  <li><b>Example (Python):</b>
+    <pre><code>
+arr = [10, 20, 30]
+print(arr[0])
+    </code></pre>
+  </li>
+
+  <li><b>Advantages:</b> Fast access, simple structure</li>
+  <li><b>Disadvantages:</b> Fixed size, costly insertion/deletion</li>
+</ul>
+
+
+<!-- ================= LINKED LIST ================= -->
+<h3>📍 Linked List</h3>
+<p><b>Definition:</b> A collection of nodes where each node contains data and a reference (pointer) to the next node.</p>
+
+<ul>
+  <li><b>Types:</b> Singly, Doubly, Circular Linked List</li>
+
+  <li><b>Example (Concept):</b>
+    <pre><code>
+[10] → [20] → [30] → NULL
+    </code></pre>
+  </li>
+
+  <li><b>Example (Python):</b>
+    <pre><code>
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+    </code></pre>
+  </li>
+
+  <li><b>Advantages:</b> Dynamic size, easy insertion/deletion</li>
+  <li><b>Disadvantages:</b> More memory (pointers), slower access (O(n))</li>
+</ul>
+
+
+<!-- ================= STACK ================= -->
+<h3>📍 Stack (LIFO)</h3>
+<p><b>Definition:</b> Stack follows Last In First Out (LIFO) principle.</p>
+
+<ul>
+  <li><b>Operations:</b> push (insert), pop (remove), peek (top element)</li>
+
+  <li><b>Real-Life Example:</b> Undo operation, plates stack</li>
+
+  <li><b>Example (Java):</b>
+    <pre><code>
+Stack<Integer> stack = new Stack<>();
+stack.push(10);
+stack.push(20);
+stack.pop(); // removes 20
+    </code></pre>
+  </li>
+
+  <li><b>Example (Python):</b>
+    <pre><code>
+stack = []
+stack.append(10)
+stack.append(20)
+stack.pop()
+    </code></pre>
+  </li>
+
+  <li><b>Time Complexity:</b> O(1) for push/pop</li>
+</ul>
+
+
+<!-- ================= QUEUE ================= -->
+<h3>📍 Queue (FIFO)</h3>
+<p><b>Definition:</b> Queue follows First In First Out (FIFO) principle.</p>
+
+<ul>
+  <li><b>Operations:</b> enqueue (add), dequeue (remove)</li>
+
+  <li><b>Real-Life Example:</b> Ticket counter, waiting line</li>
+
+  <li><b>Example (Java):</b>
+    <pre><code>
+Queue<Integer> queue = new LinkedList<>();
+queue.add(10);
+queue.add(20);
+queue.remove(); // removes 10
+    </code></pre>
+  </li>
+
+  <li><b>Example (Python):</b>
+    <pre><code>
+from collections import deque
+
+queue = deque()
+queue.append(10)
+queue.append(20)
+queue.popleft()
+    </code></pre>
+  </li>
+
+  <li><b>Time Complexity:</b> O(1)</li>
+</ul>
+
+
+<!-- ================= HASH TABLE ================= -->
+<h3>📍 Hash Table</h3>
+<p><b>Definition:</b> A data structure that stores key-value pairs and provides fast access using hashing.</p>
+
+<ul>
+  <li><b>Key Concept:</b> Hash function maps keys to index</li>
+
+  <li><b>Example (Java):</b>
+    <pre><code>
+HashMap<String, Integer> map = new HashMap<>();
+map.put("A", 1);
+map.put("B", 2);
+System.out.println(map.get("A"));
+    </code></pre>
+  </li>
+
+  <li><b>Example (Python):</b>
+    <pre><code>
+data = {"A": 1, "B": 2}
+print(data["A"])
+    </code></pre>
+  </li>
+
+  <li><b>Advantages:</b> Very fast lookup (O(1) average)</li>
+  <li><b>Disadvantages:</b> Collision handling needed</li>
+</ul>
+
+<hr>
+
   <h2>🔁 4. Basic Algorithms</h2>
 
   <h3>🔍 Searching</h3>
