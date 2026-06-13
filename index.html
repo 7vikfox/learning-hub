@@ -18,161 +18,221 @@
   <li><a href="codes.html"> Codes Notes</a></li>
 <li><a href="projects.html"> Projects Section</a></li>
   
-<h2 id="sql">SQL Notes</h2>
-
-<ul>
-  <li><strong>1. View all data</strong><br>
-    Used to display every record from a table.
-    <pre>
-SELECT * FROM students;
-    </pre>
-  </li>
-
-  <li><strong>2. Insert data</strong><br>
-    Adds a new row into a table.
-    <pre>
-INSERT INTO students (id, name, age, grade)
-VALUES (1, 'Alex', 20, 'A');
-    </pre>
-  </li>
-
-  <li><strong>3. Update data</strong><br>
-    Modifies existing records in a table.
-    <pre>
-UPDATE students
-SET grade = 'B'
-WHERE name = 'Alex';
-    </pre>
-  </li>
-
-  <li><strong>4. Delete data</strong><br>
-    Removes records from a table.
-    <pre>
-DELETE FROM students
-WHERE name = 'Alex';
-    </pre>
-  </li>
-
-  <li><strong>5. Filter records (WHERE)</strong><br>
-    Retrieves data based on conditions.
-    <pre>
-SELECT * FROM students
-WHERE age &gt; 18;
-    </pre>
-  </li>
-
-  <li><strong>6. Sort records (ORDER BY)</strong><br>
-    Sorts results in ascending or descending order.
-    <pre>
-SELECT * FROM students
-ORDER BY age ASC;
-    </pre>
-  </li>
-
-  <li><strong>7. Count records</strong><br>
-    Returns the total number of rows.
-    <pre>
-SELECT COUNT(*) AS total_students
-FROM students;
-    </pre>
-  </li>
-
-  <li><strong>8. Average values</strong><br>
-    Calculates the average of a numeric column.
-    <pre>
-SELECT AVG(age) AS average_age
-FROM students;
-    </pre>
-  </li>
-
-  <li><strong>9. Group data</strong><br>
-    Groups records and applies aggregate functions.
-    <pre>
-SELECT grade, COUNT(*) AS total_students
-FROM students
-GROUP BY grade;
-    </pre>
-  </li>
-</ul>
+<h1>Programming Notes</h1>
 
 <hr>
 
-<h2 id="python">Python Notes</h2>
-<ul>
-  <li>Python is a high-level programming language.</li>
-  <li>Supports procedural, object-oriented, and functional programming.</li>
-  <li>Basic syntax example:
-    <pre>
-# This is a comment
-print("Hello, World!")
-x = 10
-if x &gt; 5:
-    print("x is greater than 5")
-    </pre>
-  </li>
-  <li><b>input()</b> is used to take user input as text (string):
-    <pre>
-name = input("Enter your name: ")
-print(name)
-    </pre>
-  </li>
-  <li><b>int()</b> converts a string into an integer:
-    <pre>
-marks = int(input("Enter marks: "))
-    </pre>
-  </li>
-  <li><b>Basic arithmetic</b>: +, -, *, / can be used for calculations:
-    <pre>
-total = math + science + english + hindi
-percent = total / 4
-    </pre>
-  </li>
-  <li><b>f-strings</b> are used for formatted printing:
-    <pre>
-print(f"Total: {total}")
-print(f"Percentage: {percent}%")
-    </pre>
-  </li>
-  <li>Common data types: int, float, str, list, dict, tuple, set</li>
-<li><b>Variables</b> are used to store data:
-    <pre>
+<h2>🗄️ SQL Notes</h2>
+
+<details>
+<summary><b>1. SELECT - View Data</b></summary>
+
+<p>Used to display every record from a table.</p>
+
+<b>Syntax:</b>
+
+```sql
+SELECT * FROM table_name;
+```
+
+<b>Example:</b>
+
+```sql
+SELECT * FROM students;
+```
+
+</details>
+
+<details>
+<summary><b>2. INSERT - Add Data</b></summary>
+
+<p>Adds a new row into a table.</p>
+
+<b>Syntax:</b>
+
+```sql
+INSERT INTO table_name(column1,column2)
+VALUES(value1,value2);
+```
+
+<b>Example:</b>
+
+```sql
+INSERT INTO students(id,name,age,grade)
+VALUES(1,'Alex',20,'A');
+```
+
+</details>
+
+<details>
+<summary><b>3. UPDATE - Modify Data</b></summary>
+
+<p>Updates existing records.</p>
+
+```sql
+UPDATE students
+SET grade='B'
+WHERE name='Alex';
+```
+
+</details>
+
+<details>
+<summary><b>4. DELETE - Remove Data</b></summary>
+
+```sql
+DELETE FROM students
+WHERE name='Alex';
+```
+
+</details>
+
+<details>
+<summary><b>5. WHERE - Filter Records</b></summary>
+
+```sql
+SELECT * FROM students
+WHERE age > 18;
+```
+
+</details>
+
+<details>
+<summary><b>6. ORDER BY - Sorting</b></summary>
+
+```sql
+SELECT * FROM students
+ORDER BY age ASC;
+```
+
+</details>
+
+<details>
+<summary><b>7. COUNT()</b></summary>
+
+```sql
+SELECT COUNT(*) AS total_students
+FROM students;
+```
+
+</details>
+
+<details>
+<summary><b>8. AVG()</b></summary>
+
+```sql
+SELECT AVG(age) AS average_age
+FROM students;
+```
+
+</details>
+
+<details>
+<summary><b>9. GROUP BY</b></summary>
+
+```sql
+SELECT grade,
+       COUNT(*) AS total_students
+FROM students
+GROUP BY grade;
+```
+
+</details>
+
+<hr>
+
+<h2>🐍 Python Notes</h2>
+
+<details>
+<summary><b>Variables</b></summary>
+
+<p>Variables store data.</p>
+
+```python
 name = "John"
 age = 20
-    </pre>
-  </li>
+```
 
-  <li><b>If-Else Condition</b> is used to check conditions:
-    <pre>
+</details>
+
+<details>
+<summary><b>Input</b></summary>
+
+```python
+name = input("Enter your name: ")
+print(name)
+```
+
+</details>
+
+<details>
+<summary><b>Type Conversion</b></summary>
+
+```python
+marks = int(input("Enter marks: "))
+```
+
+</details>
+
+<details>
+<summary><b>If Else</b></summary>
+
+```python
 age = 18
-if age &gt;= 18:
+
+if age >= 18:
     print("Adult")
 else:
     print("Minor")
-    </pre>
-  </li>
+```
 
-  <li><b>While Loop</b> repeats code until condition becomes false:
-    <pre>
+</details>
+
+<details>
+<summary><b>While Loop</b></summary>
+
+```python
 while guess != number:
-    print("Try again")
-    </pre>
-  </li>
+    print("Try Again")
+```
 
-  <li><b>Random Number</b> using random module:
-    <pre>
+</details>
+
+<details>
+<summary><b>Random Numbers</b></summary>
+
+```python
 import random
-number = random.randint(1, 10)
-    </pre>
-  </li>
 
-  <li><b>Programs Learned:</b>
-    <ul>
-      <li>Greeting Program</li>
-      <li>Number Guessing Game</li>
+number = random.randint(1,10)
+```
+
+</details>
+
+<details>
+<summary><b>f-Strings</b></summary>
+
+```python
+print(f"Total: {total}")
+print(f"Percentage: {percent}%")
+```
+
+</details>
+
+<details>
+<summary><b>Data Types</b></summary>
+
+<ul>
+<li>int</li>
+<li>float</li>
+<li>str</li>
+<li>list</li>
+<li>tuple</li>
+<li>set</li>
+<li>dict</li>
 </ul>
-</li>
 
-<hr>
+</details>
 
 <h2 id="java">Java Basics Notes</h2>
 
